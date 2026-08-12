@@ -60,6 +60,9 @@ class TestUrbanRoutes:
         phone_code = retrieve_phone_code(self.driver)
         routes_pages.set_phone_code_field(phone_code)
         routes_pages.click_confirm_button()
+        actual_phone = routes_pages.get_phone_number_confirmed_text()
+
+        assert (actual_phone == data.phone_number), f"Esperado: '{data.phone_number}', pero se obtuvo: '{actual_phone}'"
 
 
 

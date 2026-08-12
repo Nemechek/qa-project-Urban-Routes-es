@@ -35,6 +35,7 @@ class UrbanRoutesPage:
     searching_car_title = (By.CSS_SELECTOR,".order-header-title")
     searching_car_time = (By.CSS_SELECTOR,".order-header-time")
     car_number = (By.CSS_SELECTOR,".order-number .number")
+    phone_number_field_confirm = (By.CSS_SELECTOR, ".np-button .np-text")
 
 
 
@@ -281,3 +282,11 @@ class UrbanRoutesPage:
                 self.car_number
             )
         )
+
+    def get_phone_number_confirmed_text(self):
+        element = WebDriverWait(self.driver, 10).until(
+            expected_conditions.visibility_of_element_located(
+                self.phone_number_field_confirm
+            )
+        )
+        return element.text

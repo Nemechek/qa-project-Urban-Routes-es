@@ -2,18 +2,29 @@ This project aims to perform automation testing for the entire process of orderi
 
 The tests consist of the following actions:
 
+
 Configure the address (this part has been written for you as an example).
+
 Select the Comfort fare.
+
 Fill in the phone number.
+
 Add a credit card. (Tip: the 'link' button does not become active until the card's CVV field in the 'Add a card' modal—id="code" class="card-input"—loses focus. To change the focus, you can simulate the user pressing Tab or clicking elsewhere on the screen.)
+
 Write a message for the controller.
+
 Ask for a blanket and tissues.
+
 Order two ice creams.
+
 The modal for searching for a taxi appears.
+
 Wait for the driver information to appear in the modal (optional). In addition to the previous steps, there is an optional step you can check; this one is a bit more complex than the others, but it is good practice, as you are likely to encounter more difficult tasks in your professional career.
 
-The tests must be executed individually to verify each test and the add-ons folder contains the definition of each element used in each test, such as buttons, fields, and identified elements.
 
+The tests must be executed individually to verify each test and the add-ons folder contains the definition of each element used in each test, such as buttons, fields, and identified elements and the test folder contains each test case, defined and named in accordance with the list of tests.
+
+The following apps were used for this project: Python, Git Bash and Github.
 
 About me
 
